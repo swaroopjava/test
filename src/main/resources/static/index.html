@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="filesApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="files.js"></script>
+  </head>
+  <body>
+    <div ng-controller="FilesListController as filesList">
+	    <h1>upload file</h1>
+	    
+	        
+	   
+	    <input type="file" id="file" name="file"/>
+	    <button ng-click="filesList.upload()">Upload</button>
+    </div>
+  </body>
+</html>
